@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f000;
+    overflow: hidden;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 60vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.site-title {
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 3em;
+    color: #333;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.stem-player {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.stem-buttons-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.stem-button {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.hanwurli-button { background-color: #FFE2E7; }
+.hansynth-button { background-color: #FFADBD; }
+.handrums-button { background-color: #F07E91; }
+.hanbass-button { background-color: #F0BDC5; }
+.hanpiano-button { background-color: #FFD5DC; }
+.hanperc-button { background-color: #FF989D; }
+.handm-button { background-color: #FFD5CE; }
+
+.stem-button.active {
+    border: 3px solid white !important; 
+}
+
+.stem-button:hover{
+    border-radius: 10%;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    padding: 0 40px;
+}
+
+.call-to-action h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.call-to-action p {
+    font-size: 1.2em;
+    color: #666;
+}
