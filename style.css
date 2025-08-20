@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    width: 60vw;
+    width: 100vw;
     background-size: cover;
     background-position: center;
 }
