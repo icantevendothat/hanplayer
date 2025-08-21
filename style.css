@@ -43,18 +43,12 @@ body {
     height: 100%;
     cursor: pointer;
     transition: background-color 0.4s ease-in-out;
-}
-
-.stem-buttons-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: linear-gradient(to bottom, rgba(240, 240, 240, 1), rgba(240, 240, 240, 0));
-    pointer-events: none;
-    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    mask: linear-gradient(to bottom, transparent 0%, black 5%, black 100%);
+    -webkit-mask: linear-gradient(to bottom, transparent 0%, black 5%, black 100%);
 }
 
 .hanwurli-button { background-color: #FFE2E7; }
@@ -63,32 +57,39 @@ body {
 .hanbass-button { background-color: #F0BDC5; }
 .hanpiano-button { background-color: #FFD5DC; }
 .hanperc-button { background-color: #FF989D; }
-.handm-button { background-color: #FFD5CE; }
+.handm-button { background-color: #ffd0ce; }
+.hanvox-button { background-color: #ffaaa6; }
 
 .stem-button.active {
-    border: 3px solid white !important; 
+    border: 3px solid rgb(255, 0, 0) !important; 
 }
 
-.stem-button:hover{
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+.stem-button:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(to bottom, rgb(255, 0, 0), rgba(240, 240, 240, 0));
+    pointer-events: none;
+    z-index: 10;
 }
 
-.call-to-action {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 400px;
-    padding: 0 40px;
+.stem-button img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    padding-bottom: 40px;
 }
 
-.call-to-action h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.stem-button:hover img {
+    opacity: 1;
 }
-.call-to-action p {
-    font-size: 1.2em;
-    color: #666;
+
+.stem-button.active img {
+    opacity: 1;
+    filter: brightness(1.2);
 }
