@@ -122,7 +122,6 @@ function stopAllStems() {
         gainNode.disconnect();
     });
     
-    // Clear references
     Object.keys(sources).forEach(key => delete sources[key]);
     Object.keys(gainNodes).forEach(key => delete gainNodes[key]);
 }
