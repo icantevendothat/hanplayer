@@ -41,14 +41,14 @@ body {
     -webkit-mask: linear-gradient(to bottom, transparent 0%, black 5%, black 100%);
 }
 
-.hanwurli-button { background-color: #FFE2E7; }
+.hanwurli-button { background-color: #fbd7dd; }
 .hansynth-button { background-color: #FFADBD; }
 .handrums-button { background-color: #F07E91; }
 .hanbass-button { background-color: #F0BDC5; }
 .hanpiano-button { background-color: #FFD5DC; }
 .hanperc-button { background-color: #FF989D; }
-.handm-button { background-color: #ffd0ce; }
-.hanvox-button { background-color: #ffaaa6; }
+.handm-button { background-color: #fbc9c7; }
+.hanvox-button { background-color: #fac0c0; }
 
 .stem-button.active {
     border: 3px solid rgb(255, 0, 0) !important; 
